@@ -1,0 +1,25 @@
+/* Set universal selector */
+* {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p {
+    font-weight: bold;
+}
+
+#start-quiz {
+    background-color: #351c75;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    font-weight: none;
+    padding: 9px;
+    width: 7em;
+}
+
+body button:hover {
+    background-color: violet;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
