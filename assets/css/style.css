@@ -4,10 +4,12 @@
     text-align: center;
 }
 
+/* Stylize p element */
 p {
     font-weight: bold;
 }
 
+/* Stylize the #start-quiz button */
 #start-quiz {
     background-color: #351c75;
     border-radius: 8px;
@@ -18,8 +20,8 @@ p {
     width: 7em;
 }
 
-body button:hover {
-    background-color: violet;
+#start-quiz:hover {
+    background-color: rgb(197, 106, 233);
     cursor: pointer;
     transition: all 0.25s ease-in;
 }
