@@ -1,5 +1,6 @@
-// Allows the quiz to start when the "Start Quiz" button is clicked
-document.getElementById("start-quiz").addEventListener("click", quizQuestions);
+/* Links used for reference:
+https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/
+https://www.sitepoint.com/simple-javascript-quiz/ */
 
 // Make an object called quizQuestions to set up the quiz
 const quizQuestions = [
@@ -54,3 +55,7 @@ const quizQuestions = [
         correctAnswer: "4"
     },
 ];
+
+const start = function() {
+    
+}

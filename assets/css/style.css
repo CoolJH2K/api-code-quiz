@@ -11,7 +11,7 @@ p {
 
 /* Stylize the #start-quiz button */
 #start-quiz {
-    background-color: #351c75;
+    background-color: rgb(53, 28, 117);
     border-radius: 8px;
     border-style: none;
     color: white;
@@ -21,7 +21,7 @@ p {
 }
 
 #start-quiz:hover {
-    background-color: rgb(197, 106, 233);
+    background-color: rgb(189, 96, 231);
     cursor: pointer;
     transition: all 0.25s ease-in;
 }
