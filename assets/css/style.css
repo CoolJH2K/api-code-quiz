@@ -9,6 +9,20 @@ p {
     font-weight: bold;
 }
 
+/* Stylize the #high-scores ID in the upper left corner*/
+#high-scores {
+    color: rgb(189, 96, 231);
+    text-align: left;
+}
+
+/* Stylize the timer in the upper right corner */
+#timer {
+    display: flex;
+    flex-direction: column-reverse;
+    font-weight: bold;
+    text-align: right;
+}
+
 /* Stylize the #start-quiz button */
 #start-quiz {
     background-color: rgb(53, 28, 117);

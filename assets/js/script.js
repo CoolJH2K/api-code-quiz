@@ -1,6 +1,6 @@
 /* Links used for reference:
-https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/
-https://www.sitepoint.com/simple-javascript-quiz/ */
+https://www.sitepoint.com/simple-javascript-quiz/
+https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/ */
 
 // Make an object called quizQuestions to set up the quiz
 const quizQuestions = [
@@ -57,5 +57,29 @@ const quizQuestions = [
 ];
 
 const start = function() {
-    
+    document.querySelector('start-quiz').addEventListener("click", quizQuestions);
+}
+
+// Select the #timer ID
+var timeEl = document.getElementById("#timer");
+
+// Countdown start
+var secondsLeft = 90;
+
+// Create a funciton for the countdown
+function timerCountdown() {
+    // Set interval
+    var timeInterval = setInterval(function () {
+        secondsLeft--;
+        // Shows the timer while the user is playing the quiz
+        timeEl.textContent = "Time :" + secondsLeft;
+        // If statement for when the timer runs out
+        if(secondsLeft === 0) {
+            // Stops the countdown
+            clearInterval(timeInterval);
+            // Message that pops up when the timer runs out
+            alert("Time's up!");
+        }
+        // set time in milliseconds
+    }, 9000);
 }
